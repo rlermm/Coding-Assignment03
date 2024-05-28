@@ -4,17 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BuyUseSell - Home</title>
-    <!-- adding bootstrap link for npm method-->
+    <!-- adding bootsrtap link for npm method-->
     <link
       rel="stylesheet"
       href="../Week 3/node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
   </head>
   <body class="bg-light">
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top shadow-lg p-3"
-    >
+    <!-- Navbar, made navbar resoponsive, linking all pages, styled slightly -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand fs-4 fw-bold" href="index.html">BuyUseSell</a>
         <button
@@ -30,9 +28,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="index.html">Home</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="shopping.html">Shopping</a>
             </li>
@@ -64,47 +63,48 @@
       </div>
     </nav>
 
-    <!-- Main Content -->
-    <div class="container mt-5 p-5 bg-white rounded shadow-lg">
+    <!-- Main Content, quick intro to website, styled simply -->
+    <div class="container mt-5 mb-5 p-5 bg-white rounded shadow-lg">
       <div class="text-center">
-        <h2 class="display-4 text-primary mb-4">Contact Us</h2>
+        <h1 class="display-4 mb-3 text-primary">Welcome to BuyUseSell</h1>
         <p class="lead mb-5">
-          To become a seller for BuyUseSell, please submit your information
-          below and we will contact you regarding the next steps.
+          Your one-stop solution for buying and selling used goods.
         </p>
       </div>
 
-      <!-- Form -->
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="name"
-            placeholder="Enter your name"
-          />
+      <!-- about us -->
+      <div class="container mt-5 text-center">
+        <div class="col-md-12">
+          <h1 class="mb-4 text-success">About Us</h1>
+          <p class="lead">
+            BuyUseSell is a platform dedicated to connecting buyers and sellers
+            of used goods. Our mission is to promote sustainability through
+            reuse and recycling of items.
+          </p>
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            placeholder="Enter your email"
-          />
+      </div>
+
+      <!-- mission and vision styled divs, with about, using bootstrap grid-->
+      <div class="row mt-5 g-4">
+        <div class="col-md-6">
+          <div class="p-3 border rounded h-100 bg-warning shadow-lg">
+            <h2 class="mb-3 text-danger">Our Mission</h2>
+            <p>
+              To reduce waste by encouraging the reuse of products through a
+              seamless buying and selling experience.
+            </p>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea
-            class="form-control"
-            id="message"
-            rows="3"
-            placeholder="Your message"
-          ></textarea>
+        <div class="col-md-6">
+          <div class="p-3 border rounded h-100 bg-info shadow-lg">
+            <h2 class="mb-5 text-dark">Our Vision</h2>
+            <p>
+              To become the leading platform for second-hand goods, making it
+              easier for people to find and sell quality used items.
+            </p>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary w-100 py-2">Submit</button>
-      </form>
+      </div>
     </div>
 
     <!-- Bootstrap JS and dependencies -->

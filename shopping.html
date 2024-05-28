@@ -9,11 +9,10 @@
       rel="stylesheet"
       href="../Week 3/node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    />
   </head>
   <body class="bg-light">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+    <!-- Navbar, styling nav bar and linking to the other pages and made it responsive-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top p-3">
       <div class="container-fluid">
         <a class="navbar-brand fs-4 fw-bold" href="index.html">BuyUseSell</a>
         <button
@@ -64,45 +63,62 @@
       </div>
     </nav>
 
-    <!-- Main Content -->
-    <div class="container mt-5 mb-5 p-5 bg-white rounded shadow-lg">
-      <div class="text-center">
-        <h1 class="display-4 mb-3 text-primary">Welcome to BuyUseSell</h1>
-        <p class="lead mb-5">
-          Your one-stop solution for buying and selling used goods.
-        </p>
-      </div>
-
-      <!-- about us -->
-      <div class="container mt-5 text-center">
-        <div class="col-md-12">
-          <h1 class="mb-4 text-success">About Us</h1>
-          <p class="lead">
-            BuyUseSell is a platform dedicated to connecting buyers and sellers
-            of used goods. Our mission is to promote sustainability through
-            reuse and recycling of items.
-          </p>
-        </div>
-      </div>
-
-      <!-- mission and vision-->
-      <div class="row mt-5 g-4">
+    <!--main content-->
+    <!-- Bootstrap Grid and table, grid and table listing items and prices, styled minimally in divs -->
+    <div class="container mt-5 p-5 bg-white rounded shadow-lg">
+      <div class="row">
         <div class="col-md-6">
-          <div class="p-3 border rounded h-100 bg-warning shadow-lg">
-            <h2 class="mb-3 text-danger">Our Mission</h2>
-            <p>
-              To reduce waste by encouraging the reuse of products through a
-              seamless buying and selling experience.
-            </p>
+          <h2 class="text-primary">Latest Listings</h2>
+          <!-- Table -->
+          <table class="table table-striped table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Condition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Laptop</td>
+                <td>$500</td>
+                <td>Good</td>
+              </tr>
+              <tr>
+                <td>Phone</td>
+                <td>$300</td>
+                <td>Excellent</td>
+              </tr>
+              <tr>
+                <td>Bike</td>
+                <td>$150</td>
+                <td>Fair</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card text-white bg-info mb-3">
+            <div class="card-header">Featured Item</div>
+            <div class="card-body">
+              <h5 class="btn btn-warning">Camera</h5>
+              <p class="card-text">
+                A high quality camera in excellent condition
+              </p>
+              <button class="btn btn-warning">Buy Now</button>
+            </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="p-3 border rounded h-100 bg-info shadow-lg">
-            <h2 class="mb-5 text-dark">Our Vision</h2>
-            <p>
-              To become the leading platform for second-hand goods, making it
-              easier for people to find and sell quality used items.
-            </p>
+
+          <div class="card text-white bg-success mb-3">
+            <div class="card-header">Hot Deal</div>
+            <div class="card-body">
+              <h5 class="card-title">Headphones</h5>
+              <p class="card-text">
+                Noise-cancellling headphones at a great price
+              </p>
+              <button class="btn btn-danger">Grab Deal</button>
+            </div>
           </div>
         </div>
       </div>
